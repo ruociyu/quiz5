@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import multiButton from './button'
+import CounterButton from './button'
+import HelloCGU from './cgu_hello'
 
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,15 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
+  );
+}*/
+
+function App(){
+  return(
+    <div className="App">
+      <div><HelloCGU /></div>
+      <div>{multiButton(10)}</div>
     </div>
   );
 }
